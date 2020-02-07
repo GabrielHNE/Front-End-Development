@@ -1,0 +1,129 @@
+/*
+Colors:
+#FBFBFC
+#BABEC6
+#181413
+#433E3D
+#837C7F
+*/
+/*
+
+*/
+/*Fonts Import*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+body {
+    font-family:'Times New Roman';
+    background-color: #fbfbfc;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    color: #433E3D;
+    font-family:'Roboto', sans-serif;
+    font-size: 18px;
+
+    padding: 0 30px;
+}
+
+
+.header-container {
+    display: inline-block;
+    width: 32%;
+    padding: 30px 0;
+}
+
+
+nav {
+    width:100%;
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul, li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav li {
+    position: relative;
+    margin-right: 5px;
+}
+
+nav li img {
+    width: 0.5em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+nav li:hover .dropdown-content {
+    display: block;
+}
+
+.teste-logo {
+    display: inline-block; 
+    padding: 10px; 
+    border-radius: 50%; 
+    background-color: #181413;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.teste-logo:hover {
+    background-color: #433E3D;
+    cursor: pointer;
+}
+
+.main-title {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.main-title:hover {
+    cursor: pointer;
+}
+
+.button {
+    height: 80%;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border:none;
+    padding: 6px;
+}
+
+.login-btn {
+    background-color: #FBFBFC;
+    color: #433E3D;
+}
+
+.signup-btn {
+    background-color: #433E3D;
+    color: #FBFBFC;
+}
+
+.buttons-container {
+    position: absolute; 
+    right: 20px;
+}
+

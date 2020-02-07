@@ -1,88 +1,34 @@
-/*
-Colors:
-#FBFBFC
-#BABEC6
-#181413
-#433E3D
-#837C7F
-*/
-/*
-
-*/
-/*Fonts Import*/
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;  
-}
-
-body {
-    font-family:'Times New Roman';
-    background-color: #fbfbfc;
-}
-
-header {
-    font-family:'Roboto', sans-serif;
-    height: 70px;
+main {
     width: 100%;
-    color: #433E3D;
-    font-size: 18px;
 }
 
-nav {
-    width:100%;
+.text-container {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+    color: #433e3d;
 }
 
-.nav-container {
-    width: 33%;
-    display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.title {
+   font-size: 80px;
+   font-weight: bold;
 }
 
-nav ul, li{
-    display: inline-block;
-    list-style-type: none;
-}
-
-nav li {
-    
-}
-
-.teste-logo {
-    display: inline-block; 
-    padding: 5px; 
-    border-radius: 50%; 
-    background-color: #181413;
-    color: white;
+.text-container span {
+    width: 50%;
     text-align: center;
-    margin-left: 15px;
 }
 
-.button {
-    height: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border:none;
-    padding: 6px;
+
+
+.pic-container {
+    width: 100%;
 }
 
-.login-btn {
-    background-color: #FBFBFC;
-    color: ##433E3D;
+.pic-container img {
+    width: 100%;
 }
-
-.signup-btn {
-    background-color: #433E3D;
-    color: #FBFBFC;
-}
-
 
 .play-button {
     height: 64px;
@@ -95,9 +41,12 @@ nav li {
     text-decoration: none;
 
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+
+    position: absolute;
 }
 
 .play-button:hover {
+    
     background: #BABEC6;
     transform: scale(1.03);
 }
