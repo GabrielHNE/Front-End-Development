@@ -30,7 +30,7 @@ header {
     font-family:'Roboto', sans-serif;
     font-size: 18px;
 
-    padding: 0 30px;
+    padding: 0 70px;
 }
 
 
@@ -124,6 +124,6 @@ nav li:hover .dropdown-content {
 
 .buttons-container {
     position: absolute; 
-    right: 20px;
+    right: 70px;
 }
 
