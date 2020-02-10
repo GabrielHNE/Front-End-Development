@@ -25,15 +25,8 @@ main {
     text-align: justify;
 }
 
-.pic-container {
-    width: 100%;
-}
-
-.pic-container img {
-    width: 100%;
-}
-
 .play-button {
+    display: inline;
     height: 64px;
     width: 64px;
     border-radius: 50%;
@@ -42,18 +35,27 @@ main {
     background-color: #FBFBFC;
     text-align: center;
     text-decoration: none;
+    transition: background-color s;
 
     box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-
-    position: absolute;
 }
 
 .play-button:hover {
-    background: #BABEC6;
+    background-color: #BABEC6;
     transform: scale(1.03);
 }
 
-.big-image {
+.big-image-container {
     display: flex;
+    justify-content: end;
+    align-items: center;
+}
 
+.big-image img {
+    width: 100%;
+}
+
+.tour {
+    color: #FBFBFC;
+    position: absolute;
 }
