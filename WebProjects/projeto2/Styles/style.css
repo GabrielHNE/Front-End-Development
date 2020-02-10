@@ -51,7 +51,7 @@ main {
     align-items: center;
 }
 
-.big-image img {
+.big-image-container img {
     width: 100%;
 }
 
