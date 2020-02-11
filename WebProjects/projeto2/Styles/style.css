@@ -26,23 +26,16 @@ main {
 }
 
 .play-button {
-    display: inline;
-    height: 64px;
-    width: 64px;
-    border-radius: 50%;
-    border: 1px grey;
-    padding: 4px;
-    background-color: #FBFBFC;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color s;
+    background-color: transparent;
+}
 
-    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+.play-button img {
+    width: 64px;
+    height: 64px;
 }
 
 .play-button:hover {
-    background-color: #BABEC6;
-    transform: scale(1.03);
+    background-color: transparent;
 }
 
 .big-image-container {
@@ -51,11 +44,16 @@ main {
     align-items: center;
 }
 
-.big-image-container img {
+.big-image {
     width: 100%;
+    height: 500px;
 }
 
 .tour {
     color: #FBFBFC;
     position: absolute;
+}
+
+.big-image-details {
+    height: 300px;
 }

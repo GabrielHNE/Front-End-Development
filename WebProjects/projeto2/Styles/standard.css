@@ -18,6 +18,23 @@ Colors:
     box-sizing: border-box;  
 }
 
+
+/**
+ * Reset button styles.
+ * It takes a bit of work to achieve a neutral look.
+ */
+ 
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	/* show a hand cursor on hover; some argue that we
+	should keep the default arrow cursor for buttons */
+	cursor: pointer;
+}
+
 body {
     font-family:'Times New Roman';
     background-color: #fbfbfc;
@@ -36,7 +53,7 @@ header {
 
 .header-container {
     display: inline-block;
-    width: 32%;
+    width: 33%;
     padding: 30px 0;
 }
 
@@ -102,28 +119,54 @@ nav li:hover .dropdown-content {
     cursor: pointer;
 }
 
-.button {
-    height: 80%;
-    width: 70px;
+.btn {
+    display: inline-block;
     text-align: center;
     text-decoration: none;
-    font-weight: bold;
-    border:none;
-    padding: 6px;
+    margin: 2px 0;
+  
+    border: solid 1px transparent;
+    border-radius: 4px;
+
+    padding: 0.5em 1em;
+    outline: none;
+    /* make sure colors have enough contrast! */
+    background-color: #FBFBFC;
+    color: #433E3D;
+}
+  
+/* Firefox: removes the inner border shown on focus */
+.btn::-moz-focus-inner {
+border: none;
+}
+
+/* old-school "down" effect on clic + color tweak */
+.btn:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+/* inverse colors on mouse-over */
+.btn:hover,
+.btn:focus {
+    color: #FBFBFC;
+    border-color: currentColor;
+    background-color: #433E3D;
 }
 
 .login-btn {
+    font-weight: bold;
     background-color: #FBFBFC;
     color: #433E3D;
 }
 
 .signup-btn {
+    font-weight: bold;
     background-color: #433E3D;
     color: #FBFBFC;
 }
 
 .buttons-container {
-    position: absolute; 
-    right: 70px;
+    text-align: right;
 }
 
